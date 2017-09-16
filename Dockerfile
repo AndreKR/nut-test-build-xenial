@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 RUN apt update
-RUN apt install git curl autoconf libtool pkg-config python g++ libusb-1.0-0-dev
+RUN apt install -y git curl autoconf libtool pkg-config python g++ libusb-1.0-0-dev
 RUN git clone https://github.com/networkupstools/nut.git
 RUN cd nut
 RUN git checkout libusb-1.0
